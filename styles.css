@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 60px;
+    background-color:#2152D0;
+    font-size: 48px;
+    color: white;    
+}
+
+.main{
+    background-color: #7a97e3;
+    display: flex;
+}
+
+.main ul{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    gap: 50px ;
+}
+
+.following_courses{
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    min-height: 600px;
+}
+
+.following_courses h2{
+    padding-bottom: 75px;
+}
+
+.course_button{
+    background-color: #2152D0;
+    border: none;
+    padding: 12px 28px;
+    text-align: center;
+    border-radius: 16px;
+    width: 250px;
+    color: white;
+    font-weight: bold;
+}
+
+.trim {
+    overflow: hidden;
+    max-height: 800px;
+}
+
+.welcome {
+    position: relative;
+    text-align: center;
+    color: #092467;
+}
+
+.img_text {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+}
