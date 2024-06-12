@@ -23,6 +23,21 @@ body {
     flex-direction: column;
     max-width: 50%;
     gap: 50px ;
+    transition: all 0.3s;
+}
+.header_buttons{
+    background-color: #092467;
+    border: none;
+    padding: 12px 28px;
+    text-align: center;
+    border-radius: 16px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header_buttons:hover{
+    transform: scale(1.1);
 }
 
 .following_courses{
@@ -32,6 +47,8 @@ body {
     padding: 60px;
     min-height: 600px;
 }
+
+
 
 .following_courses h2{
     padding-bottom: 75px;
@@ -46,11 +63,19 @@ body {
     width: 250px;
     color: white;
     font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.course_button:hover{
+    background-color: #092467;
+    transform: scale(1.1);
 }
 
 .trim {
     overflow: hidden;
-    max-height: 800px;
+    max-width: 1450px;
+    max-height:800px;
 }
 
 .welcome {
