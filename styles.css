@@ -73,6 +73,7 @@ body {
     transition: 0.3s;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .course_button:hover {
@@ -115,6 +116,11 @@ body {
     cursor: pointer;
     width: 78px;
     height: 78px;
+    transition: 0.3s;
+}
+
+.drop_btn:hover {
+    transform: scale(1.2);
 }
 
 .dropdown_menu {
