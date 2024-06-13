@@ -55,7 +55,7 @@ body {
     padding-bottom: 75px;
 }
 
-.course_button{
+.course_button {
     background-color: #2152D0;
     border: none;
     padding: 12px 28px;
@@ -68,7 +68,7 @@ body {
     margin-bottom: 20px;
 }
 
-.course_button:hover{
+.course_button:hover {
     background-color: #092467;
     transform: scale(1.1);
 }
@@ -101,4 +101,40 @@ body {
     top: 20%;
     left: 20%;
     transform: translate(-20%, -20%);
+}
+
+.drop_btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 78px;
+    height: 78px;
+}
+
+.dropdown_menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #092467;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background-color: #7a97e3;
+}
+
+.show {
+    display: block;
 }
