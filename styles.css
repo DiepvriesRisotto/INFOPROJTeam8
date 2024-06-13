@@ -34,6 +34,7 @@ body {
     color: white;
     font-weight: bold;
     transition: 0.3s;
+
 }
 
 .header_buttons:hover{
@@ -64,7 +65,7 @@ body {
     color: white;
     font-weight: bold;
     transition: 0.3s;
-
+    margin-bottom: 20px;
 }
 
 .course_button:hover{
@@ -74,15 +75,26 @@ body {
 
 .trim {
     overflow: hidden;
-    max-width: 1450px;
-    max-height:800px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.welcome {
-    position: relative;
-    text-align: center;
-    color: #092467;
-}
+
+ .welcome {
+        position: relative;
+        text-align: center;
+        color: #092467;
+        width: 100%;
+        height: auto;
+        
+    }
+ 
+.img_text {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        transform: translate(-20%, -20%);
+    }
 
 .img_text {
     position: absolute;
