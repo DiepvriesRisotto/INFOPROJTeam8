@@ -103,17 +103,11 @@ body {
 .img_text {
         position: absolute;
         top: 20%;
-        left: 20%;
-        transform: translate(-20%, -20%);
+        left: 40%;
+        transform: translate(-20%, -40%);
         text-shadow: 3px 3px 4px #000000;
     }
 
-.img_text {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    transform: translate(-20%, -20%);
-}
 
 .drop_btn {
     background-color: transparent;
