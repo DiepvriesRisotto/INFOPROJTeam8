@@ -4,41 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum Homepage</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../javascript.js" defer></script>
 </head>
 <body>
     
     <div class="header">
-        <div class="dropdown">
-            <img onclick="showDropdown()" class="drop_btn" src="img/menubar.png">
-            <div id="drp" class="dropdown_content">
-                <a href="./forum/forumhome.html">Forum</a>
-                <a href="./courseoverview/coursehome.html">Courses</a>
-                <a href="contact.html">Contact us</a>
-            </div>
+            <div class="dropdown">
+                <img onclick="showDropdown()" class="drop_btn" src="../img/menubar.png">
+                <div id="drp" class="dropdown_content">
+                    <a href="index.html">Home</a>
+                    <a href="./forum/forumhome.html">Forum</a>
+                    <a href="./courseoverview/coursehome.html">Courses</a>
+                </div>
         </div>
-        <div class= "logo"> <img src="./img/logo.png" alt="Learn To Learn Logo"> </div>
+        <div class= "logo"> <img src="../img/logo.png" alt="Learn To Learn Logo"> </div>
         <h1>LearnToLearn</h1>
         <ul>
        <div class="header_buttons">
-           <a href= profile.html> <img src="./img/profile.png" alt="Profile"></a>
-           <a href="cart.html"> <img src="./img/Cart.png" alt="Cart"> </a>
+           <a href= ../profile.html> <img src="../img/profile.png" alt="Profile"></a>
+           <a href="../cart.html"> <img src="../img/Cart.png" alt="Cart"> </a>
         </div>
         </ul>
     </div>
 
-    <div class="main">
-        <div class="following_courses">
-            <h2>Following Courses</h2>
-            <ul>
-                <ul><a href= "./courses/coursea.html"><button class="course_button">Course A</button></a></ul>
-                <ul><a href= "./courses/courseb.html"><button class="course_button">Course B</button></a></ul>
-                <ul><a href= "./courses/coursec.html"><button class="course_button">Course C</button></a></ul>
-            </ul>
+    <aside class="sidebar">
+        <h2>Forum</h2>
+        <div class="menu">
+            <button>My threads</button>
+            <button>New</button>
+            <button>Saved</button>
+            <button>Most commented</button>
+            <button>Most liked</button>
         </div>
-        <div class="welcome">
-            <img class="trim" src="./img/featured_art_grad_avice_istock.jpg.webp" alt="Learn To Learn Logo">
-            
-</body>
+    </aside>
+
+    <section class="forum">
+        <h2>Forum</h2>
+        <div class="threads">
+            <div class="thread">
+                <h3>Thread</h3>
+                <p>contents of thread</p>
+                <div class="thread-actions">
+                    <button>Save</button>
+                    <button>Comment</button>
+                    <button>Like</button>
+                </div>
+            </div>
+            <div class="thread">
+                <h3>Thread</h3>
+                <p>contents of thread</p>
+                <div class="thread-actions">
+                    <button>Save</button>
+                    <button>Comment</button>
+                    <button>Like</button>
+                </div>
+            </div>
+            <div class="thread">
+                <h3>Thread</h3>
+                <p>contents of thread</p>
+                <div class="thread-actions">
+                    <button>Save</button>
+                    <button>Comment</button>
+                    <button>Like</button>
+                </div>
+            </div>
+            <div class="thread">
+                <h3>Thread</h3>
+                <p>contents of thread</p>
+                <div class="thread-actions">
+                    <button>Save</button>
+                    <button>Comment</button>
+                    <button>Like</button>
+                </div>
+            </div>
+            <div class="thread">
+                <h3>Thread</h3>
+                <p>contents of thread</p>
+                <div class="thread-actions">
+                    <button>Save</button>
+                    <button>Comment</button>
+                    <button>Like</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+<button class="add-thread">+</button>
+
 </html>

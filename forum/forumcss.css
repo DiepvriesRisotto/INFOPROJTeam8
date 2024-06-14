@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #A7B9EB;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.search-courses {
+    margin-bottom: 20px;
+}
+
+.search-courses input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.menu button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3366CC;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #254a99;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px;
+    width: 200px;
+}
+
+.profile-cart button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #3366CC;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.profile-cart button:hover {
+    background-color: #254a99;
+}
+
+.forum h2 {
+    margin-bottom: 20px;
+}
+
+.threads {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.thread {
+    background-color: #E4EDFF;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.thread h3 {
+    margin-top: 0;
+}
+
+.thread-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.thread-actions button {
+    background-color: #3366CC;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.thread-actions button:hover {
+    background-color: #254a99;
+}
+
+.add-thread {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00CC66;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.add-thread:hover {
+    background-color: #00994C;
+}
