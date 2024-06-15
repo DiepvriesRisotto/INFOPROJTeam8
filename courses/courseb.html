@@ -3,10 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Default HTML Page</title>
+    <title>LearnToLearn</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../javascript.js" defer></script>
 </head>
 <body>
-    <h1>Welcome to the Default HTML Page</h1>
-    <p>This is a default HTML page. You can modify it to suit your needs.</p>
+    
+    <div class="header">
+        <div class="dropdown">
+            <img onclick="showDropdown()" class="drop_btn" src="../img/menubar.png">
+            <div id="drp" class="dropdown_content">
+                <a href="../index.html">Home</a>
+                <a href="../forum/forumhome.html">Forum</a>
+                <a href="../courseoverview/coursehome.html">Courses</a>
+            </div>
+        </div>
+        <div class= "logo"> <img src="../img/logo.png" alt="Learn To Learn Logo"> </div>
+        <h1>LearnToLearn</h1>
+        <ul>
+       <div class="header_buttons">
+           <a href= profile.html> <img src="../img/profile.png" alt="Profile"></a>
+           <a href="cart.html"> <img src="../img/Cart.png" alt="Cart"> </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="course_main_container">
+        <div class="course_main_page">
+            <div class="course_main_content">
+            <h2>Leitner system</h2>
+            <img src="/img/0125_Letiner_Inline.jpg" alt="Leitner system">
+            <p>To us the Leitner system you first need to create flashcards that feature topics and material that you are studying. Secondly, you need 3 to 5 boxes
+                 to house your flashcard. Finally, you need to label each box with a designated study time period. All your cards should start in box 1. If you answer
+                 a card correctly, move it to box 2. If you answer incorrectly, move it back to box 1. Simply put, if you get a card wrong, move it to the previous box,
+                 if you get a card correct, move it to the next box. Once you are done going through all the cards, you now have a system to distinguish which cards need
+                 to be reviewed more often.</p>
+            </div>
+            <div class="course_main_buttons">
+                <a href="#"><button class="course_start">Start course</button></a>
+                <a href="/courseoverview/coursehome.html"><button class="course_back">Go back</button></a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
