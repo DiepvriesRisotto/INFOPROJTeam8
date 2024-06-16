@@ -3,49 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LearnToLearn</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js" defer></script>
+    <title>Profile - LearnToLearn</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        body {
+            background-color: #1a237e; 
+            font-family: 'Helvetica', 'Arial', sans-serif; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-container {
+            background-color: #ffffff; 
+            border-radius: 25px;
+            padding: 60px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            text-align: center;
+            width: 60%; 
+        }
+        .profile-container h1 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #1a237e; 
+        }
+        .profile-details {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-half {
+            width: 48%; 
+            text-align: left; 
+        }
+        .left-half input[type="text"] {
+            width: 100%; 
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px solid #b0bec5; 
+            border-radius: 10px;
+            background-color: #eceff1; 
+            font-size: 1.1em;
+        }
+        .right-half {
+            width: 48%; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-picture {
+            width: 80%;
+            border: 5px solid #1a237e; 
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .edit-button {
+            padding: 15px 30px;
+            background-color: #00cc66; 
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .go-back-button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            background-color: #00cc66; 
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function editProfilePicture() {
+            alert("The profile picture has been edited");
+        }
+    </script>
 </head>
 <body>
-    
-    <div class="header">
-        <div class="dropdown">
-            <img onclick="showDropdown()" class="drop_btn" src="../img/menubar.png">
-            <div id="drp" class="dropdown_content">
-                <a href="index.html">Home</a>
-                <a href="./forum/forumhome.html"></a>
-                <a href="./courseoverview/coursehome.html">Courses</a>
+    <div class="profile-container">
+        <h1>Profile</h1>
+        <div class="profile-details">
+            <div class="left-half">
+                <input type="text" placeholder="Username" readonly>
+                <input type="text" placeholder="Email" readonly>
+                <input type="text" placeholder="Language Preference" readonly>
+                <input type="text" placeholder="Study" readonly>
+                <input type="text" placeholder="Notification" readonly>
+                <input type="text" placeholder="Password" readonly>
             </div>
-            </div>
-        </div>
-        <div class= "logo"> <img src="./img/logo.png" alt="Learn To Learn Logo"> </div>
-        <h1>LearnToLearn</h1>
-        <ul>
-       <div class="header_buttons">
-           <a href= profile.html> <img src="./img/profile.png" alt="Profile"></a>
-           <a href="cart.html"> <img src="./img/Cart.png" alt="Cart"> </a>
-        </div>
-        </ul>
-    </div>
-
-    <div class="main">
-        <div class="following_courses">
-            <h2>Following Courses</h2>
-            <ul>
-                <ul><a href= "./courses/coursea.html"><button class="course_button">Course A</button></a></ul>
-                <ul><a href= "./courses/courseb.html"><button class="course_button">Course B</button></a></ul>
-                <ul><a href= "./courses/coursec.html"><button class="course_button">Course C</button></a></ul>
-            </ul>
-        </div>
-        <div class="welcome">
-            <img class="trim" src="./img/featured_art_grad_avice_istock.jpg.webp" alt="Learn To Learn Logo">
-            <div class="img_text">
-                <h2>Welcome to LearnToLearn</h2>
-                <h3>Here we offer multiple ways for you to learn how to learn!</h3>
-                <h3>Let us introduce more about who we are and what we do.</h3>
+            <div class="right-half">
+                <img src="profilepic.jpg" alt="Profile Picture" class="profile-picture">
+                <button class="edit-button" onclick="editProfilePicture()">Edit</button>
             </div>
         </div>
     </div>
+    <button class="go-back-button" onclick="window.location.href='index.html'">Go back</button>
 </body>
-</html>
+</html> 
