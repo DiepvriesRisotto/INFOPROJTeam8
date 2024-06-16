@@ -3,10 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Default HTML Page</title>
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background-color: #f0f0f0; 
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 80px); 
+        }
+
+        .cart {
+            display: flex;
+            width: 100%;
+            background-color: white; 
+            padding: 20px;
+        }
+
+        .left-section {
+            width: 70%;
+            background-color: white;
+            padding: 20px;
+            color: #092467; 
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .course-item {
+            position: relative; 
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #7a97e3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .course-item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+            border-radius: 10px;
+        }
+
+        .course-details {
+            flex: 1;
+        }
+
+        .course-details h3 {
+            margin: 0;
+            font-size: 20px;
+            color: white;
+        }
+
+        .course-details p {
+            margin: 8px 0;
+            color: white;
+        }
+
+        .course-price {
+            color: #092467; 
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: auto;
+        }
+
+        .right-section {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .order-summary {
+            background-color: #3366CC;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .order-summary h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: white;
+        }
+
+        .subtotal {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .subtotal span {
+            color: white;
+        }
+
+        .subtotal .value {
+            font-weight: bold;
+        }
+
+        .checkout-button {
+            background-color: #00CC66;
+            color: white;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            align-self: center;
+        }
+
+        .checkout-button:hover {
+            background-color: #00994C;
+        }
+
+        .remove-button {
+            background-color: #FE5913;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 8px;
+            font-size: 16px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .remove-button:hover {
+            background-color: #FF774D;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Default HTML Page</h1>
-    <p>This is a default HTML page. You can modify it to suit your needs.</p>
+    <!-- Header -->
+    <div class="header">
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="drop_btn"><img src="img/menubar.png" alt="Menu"></button>
+            <div id="dropdown-content" class="dropdown_content">
+                <a href="index.html">Home</a>
+                <a href="forum/forumhome.html">Forum</a>
+                <a href="courseoverview/coursehome.html">Courses</a>
+                <a href="customersupport.html">Contact</a>
+            </div>
+        </div>
+        <div class="logo"><img src="img/logo.png" alt="LearnToLearn Logo"></div>
+        <h1>LearnToLearn</h1>
+        <div class="header_buttons">
+            <a href="profile.html"><img src="img/profile.png" alt="Profile"></a>
+            <a href="cart.html"><img src="img/Cart.png" alt="Cart"></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="cart">
+            <!-- Left Section - Courses -->
+            <div class="left-section">
+                <div class="course-item">
+                    <img src="img/0817_SQ3R-Method_Inline.jpg" alt="Course Image">
+                    <div class="course-details">
+                        <h3>Course Title 1</h3>
+                        <p>Description of Course 1</p>
+                    </div>
+                    <div class="course-price">5 €</div>
+                    <button class="remove-button" onclick="removeCourse(this)">X</button>
+                </div>
+                <div class="course-item">
+                    <img src="img/0125_Letiner_Inline.jpg" alt="Course Image">
+                    <div class="course-details">
+                        <h3>Course Title 2</h3>
+                        <p>Description of Course 2</p>
+                    </div>
+                    <div class="course-price">5 €</div>
+                    <button class="remove-button" onclick="removeCourse(this)">X</button>
+                </div>
+            </div>
+            <!-- Right Section - Order Summary -->
+            <div class="right-section">
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="subtotal">
+                        <span>Subtotal:</span>
+                        <span class="value">10 €</span>
+                    </div>
+                    <div class="subtotal">
+                        <span>Total:</span>
+                        <span class="value">10 €</span>
+                    </div>
+                    <button class="checkout-button" onclick="checkout()">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdown-content").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.closest('.drop_btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown_content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        function removeCourse(button) {
+            var courseItem = button.parentElement;
+            var price = parseFloat(courseItem.querySelector('.course-price').innerText);
+            var subtotalElement = document.querySelector('.subtotal .value');
+            var totalElement = document.querySelectorAll('.subtotal .value')[1];
+
+            var subtotal = parseFloat(subtotalElement.innerText);
+            var total = parseFloat(totalElement.innerText);
+
+            subtotal -= price;
+            total -= price;
+
+            subtotalElement.innerText = subtotal.toFixed(2) + ' €';
+            totalElement.innerText = total.toFixed(2) + ' €';
+
+            courseItem.remove();
+        }
+
+        function checkout() {
+            window.location.href = "payment.html";
+        }
+    </script>
 </body>
 </html>
