@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: "Inter", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 80px); 
+        }
+
+        .customersupport {
+            display: flex;
+            width: 100%;
+            background-color: #7a97e3;
+        }
+
+        .left-section {
+            width: 30%;
+            background-color: #90a8e6;
+            padding: 20px;
+            color: white;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .left-section h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background-color: #092467;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .right-section {
+            flex: 1;
+            background-color: white;
+            padding: 40px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #092467;
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        .form-container {
+            background-color: #7a97e3;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .form-title {
+            font-size: 20px;
+            color: #2152D0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-input, .form-textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-family: "Inter", sans-serif;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .form-textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .form-button {
+            background-color: #00CC66;
+            color: white;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: "Inter", sans-serif;
+        }
+
+        .form-button:hover {
+            background-color: #00CC66;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 60px;
+            background-color: #2152D0;
+            font-size: 48px;
+            color: white;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .drop_btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .drop_btn img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .dropdown_content {
+            display: none;
+            position: absolute;
+            background-color: #2152D0;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            min-width: 160px;
+            top: 70px; /* Adjusted to align with header */
+            left: 0;
+        }
+
+        .dropdown_content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-family: "Inter", sans-serif;
+        }
+
+        .dropdown_content a:hover {
+            background-color: #3366CC;
+        }
+
+        .logo img {
+            height: 50px; /* Maintained the original size */
+            width: 50px;
+        }
+
+        .header h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .header_buttons a img {
+            height: 50px; /* Restored original size */
+            width: 50px;
+            margin: 0 10px;
+        }
+
+        .dropdown .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="drop_btn"><img src="img/menubar.png" alt="Menu"></button>
+            <div id="dropdown-content" class="dropdown_content">
+                <a href="index.html">Home</a>
+                <a href="forum/forumhome.html">Forum</a>
+                <a href="courseoverview/coursehome.html">Courses</a>
+                <a href="customersupport.html">Contact</a>
+            </div>
+        </div>
+        <div class="logo"><img src="img/logo.png" alt="LearnToLearn Logo"></div>
+        <h1>LearnToLearn</h1>
+        <div class="header_buttons">
+            <a href="profile.html"><img src="img/profile.png" alt="Profile"></a>
+            <a href="cart.html"><img src="img/Cart.png" alt="Cart"></a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="customersupport">
+            <!-- Left Section - Contact Information -->
+            <div class="left-section">
+                <h2>Contact Information</h2>
+                <div class="info-box">+31 ---------</div>
+                <div class="info-box">LearnToLearn@gmail.com</div>
+            </div>
+            <!-- Right Section - Support Form -->
+            <div class="right-section">
+                <div class="section-title">How can we help you?</div>
+                <div class="form-container">
+                    <div class="form-title">Fill in the details below</div>
+                    <input type="text" class="form-input" name="name" placeholder="Your name" required>
+                    <input type="email" class="form-input" name="email" placeholder="Your email address" required>
+                    <textarea class="form-textarea" name="description" placeholder="Description of the problem" required></textarea>
+                    <button type="submit" class="form-button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdown-content").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.closest('.drop_btn')) {
+                var dropdowns = document.getElementsByClassName("dropdown_content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
