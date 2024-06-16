@@ -434,3 +434,25 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
+
+.exercises {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.final_assessment_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.final_assessment_complete_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 120px;
+}
+
