@@ -206,7 +206,7 @@ body {
 
 
 .thread-actions button {
-    background-color: #3366CC;
+    background-color: transparent;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -502,4 +502,8 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+}
+
+.thread img {
+    width: 30px;
 }
