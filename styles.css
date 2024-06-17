@@ -140,14 +140,14 @@ body {
     display: none;
     position: absolute;
     background-color: #092467;
-    min-width: 160px;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown_content a {
     color: white;
-    padding: 12px 16px;
+    padding: 18px 24px;
     display: block;
 }
 
@@ -514,4 +514,8 @@ body {
 
 .thread img {
     width: 30px;
+}
+
+#drp img {
+    width: 60px;
 }
