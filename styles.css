@@ -532,3 +532,96 @@ body {
 .answers {
     margin-bottom: 50px;
 }
+
+.answers input[type="radio"]  {
+    opacity: 0;
+    margin: 8px;
+}
+
+.answers fieldset {
+    border: none;
+}
+
+.answers label::before {
+    content: attr(for) " ";
+    display: inline-block;
+    background-color: #2152D0;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 4px;
+    margin-left: -1rem;
+    transition: background-color 0.3s;
+}
+
+
+.answers label:hover::before,
+.answers input:checked + label::before {
+    background-color: #092467;
+}
+
+.answers label[for="q1a"]::before {
+    content: "A";
+}
+
+.answers label[for="q1b"]::before {
+    content: "B";
+}
+
+.answers label[for="q1c"]::before {
+    content: "C";
+}
+
+.answers label[for="q1d"]::before {
+    content: "D";
+}
+
+.answers label[for="q2a"]::before {
+    content: "A";
+}
+
+.answers label[for="q2b"]::before {
+    content: "B";
+}
+
+.answers label[for="q2c"]::before {
+    content: "C";
+}
+
+.answers label[for="q2d"]::before {
+    content: "D";
+}
+
+.answers label[for="q3a"]::before {
+    content: "A";
+}
+
+.answers label[for="q3b"]::before {
+    content: "B";
+}
+
+.answers label[for="q3c"]::before {
+    content: "C";
+}
+
+.answers label[for="q3d"]::before {
+    content: "D";
+}
+
+.answers label[for="q4a"]::before {
+    content: "A";
+}
+
+.answers label[for="q4b"]::before {
+    content: "B";
+}
+
+.answers label[for="q4c"]::before {
+    content: "C";
+}
+
+.answers label[for="q4d"]::before {
+    content: "D";
+}
