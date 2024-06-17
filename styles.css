@@ -30,7 +30,13 @@ body {
     gap: 50px ;
     transition: all 0.3s;
 }
-.header_buttons{
+
+.header_buttons_container {
+    display: flex;
+    gap: 15px; 
+}
+
+.header_buttons {
     background-color: #092467;
     border: none;
     padding: 12px 28px;
@@ -39,7 +45,8 @@ body {
     color: white;
     font-weight: bold;
     transition: 0.3s;
-
+    flex: 1; 
+    transition: 0.3s;
 }
 
 .header_buttons:hover{
