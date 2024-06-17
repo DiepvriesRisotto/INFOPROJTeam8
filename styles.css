@@ -109,6 +109,7 @@ body {
     }
  
 .img_text {
+        color: white;
         position: absolute;
         top: 20%;
         left: 40%;
