@@ -497,3 +497,9 @@ body {
 .dropdown .show {
     display: block;
 }
+
+.learn_prob_main_buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
