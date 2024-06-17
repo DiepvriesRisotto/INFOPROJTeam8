@@ -6,13 +6,7 @@
     <title>Customer Support</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0;
-            font-family: "Inter", sans-serif;
-        }
+
 
         .container {
             display: flex;
@@ -124,74 +118,6 @@
             background-color: #00CC66;
         }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 24px 60px;
-            background-color: #2152D0;
-            font-size: 48px;
-            color: white;
-        }
-
-        .dropdown {
-            position: relative;
-        }
-
-        .drop_btn {
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
-
-        .drop_btn img {
-            width: 30px;
-            height: 30px;
-        }
-
-        .dropdown_content {
-            display: none;
-            position: absolute;
-            background-color: #2152D0;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            min-width: 160px;
-            top: 70px; /* Adjusted to align with header */
-            left: 0;
-        }
-
-        .dropdown_content a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-family: "Inter", sans-serif;
-        }
-
-        .dropdown_content a:hover {
-            background-color: #3366CC;
-        }
-
-        .logo img {
-            height: 50px; /* Maintained the original size */
-            width: 50px;
-        }
-
-        .header h1 {
-            margin: 0;
-            flex-grow: 1;
-            text-align: center;
-        }
-
-        .header_buttons a img {
-            height: 50px; /* Restored original size */
-            width: 50px;
-            margin: 0 10px;
-        }
-
-        .dropdown .show {
-            display: block;
-        }
     </style>
 </head>
 <body>
@@ -200,7 +126,7 @@
         <div class="dropdown">
             <button onclick="toggleDropdown()" class="drop_btn"><img src="img/menubar.png" alt="Menu"></button>
             <div id="dropdown-content" class="dropdown_content">
-                <a href="index.html">Home</a>
+                <a href="home.html">Home</a>
                 <a href="forum/forumhome.html">Forum</a>
                 <a href="courseoverview/coursehome.html">Courses</a>
                 <a href="customersupport.html">Contact</a>
